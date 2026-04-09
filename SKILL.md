@@ -62,7 +62,7 @@ Full stop-word catalog (97 entries): `${CLAUDE_PLUGIN_ROOT}/references/info-styl
 ## When to Load Reference Files
 
 Reference files: `${CLAUDE_PLUGIN_ROOT}/references/<filename>`
-If the path is not resolved, search: `Glob("**/ru-text/references/scoring.md")` and use the parent directory.
+If the path is not resolved, search: `Glob("**/rustxt/references/scoring.md") or Glob("**/ru-text/references/scoring.md")` and use the parent directory.
 
 | Task | File |
 |---|---|
