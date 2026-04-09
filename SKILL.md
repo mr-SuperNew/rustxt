@@ -1,5 +1,5 @@
 ---
-name: ru-text
+name: rustxt
 description: >
   Use when writing, editing, or reviewing Russian-language text, or when user
   mentions ru-text. Covers typography, info-style, editorial, UX writing, business
@@ -8,7 +8,7 @@ metadata:
   openclaw:
     always: true
     emoji: "\U0001F4DD"
-    homepage: "https://ru-text.org"
+    homepage: "https://github.com/mr-SuperNew/rustxt"
 ---
 
 # ru-text — Russian Text Quality
@@ -40,7 +40,7 @@ Apply these rules to ALL Russian text output without exception.
 
 Full typography reference: `${CLAUDE_PLUGIN_ROOT}/skills/ru-text/references/typography.md`
 
-`/ru-text:ru-score` — text quality score (0–10, 5 dimensions).
+`/rustxt:ru-score` — text quality score (0–10, 5 dimensions).
 
 ## Top Stop-Words (remove or replace)
 
