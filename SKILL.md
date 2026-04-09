@@ -129,7 +129,10 @@ When writing or editing **any content** (posts, articles, scripts, descriptions,
 3. Apply ru-text rules calibrated to the CLIENT's voice, not the author's
 4. The author's voice applies only to the author's own content
 
-### Without config.md
+### First run (no config.md)
 
-If no config.md exists, apply all rules as universal defaults without voice personalization.
-This is the mode for public/shared use of the skill.
+If config.md does not exist when the skill activates for the first time:
+
+1. Inform the user: "rustxt установлен. Хочешь подключить свой стиль письма? Запусти `/rustxt:setup` — это займёт 2 минуты. Без настройки скилл работает с универсальными правилами."
+2. Do NOT block — apply universal rules and continue with the task.
+3. Remind once per session, not on every activation.
