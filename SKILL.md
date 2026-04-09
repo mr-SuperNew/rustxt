@@ -2,7 +2,7 @@
 name: rustxt
 description: >
   Use when writing, editing, or reviewing Russian-language text, or when user
-  mentions ru-text. Covers typography, info-style, editorial, UX writing, business
+  mentions rustxt or ru-text. Covers typography, info-style, editorial, UX writing, business
   correspondence. Auto-activates on Russian text output.
 metadata:
   openclaw:
@@ -15,7 +15,7 @@ metadata:
 
 Independent Russian text quality reference by Arseniy Kamyshev.
 With gratitude to the authors whose work shaped modern Russian text standards.
-Credits and recommended reading: `${CLAUDE_PLUGIN_ROOT}/skills/ru-text/references/sources.md`
+Credits and recommended reading: `${CLAUDE_PLUGIN_ROOT}/references/sources.md`
 
 **Style priority**: if the user explicitly requests a specific style (casual, academic, SEO, literary, etc.), their prompt overrides these default rules where they conflict. These rules are defaults, not mandates.
 
@@ -38,7 +38,7 @@ Apply these rules to ALL Russian text output without exception.
 | Abbreviations with NBSP | т.д., т.е. | т. д., т. е. |
 | Ruble symbol after number | 1500 руб | 1 500 ₽ |
 
-Full typography reference: `${CLAUDE_PLUGIN_ROOT}/skills/ru-text/references/typography.md`
+Full typography reference: `${CLAUDE_PLUGIN_ROOT}/references/typography.md`
 
 `/rustxt:ru-score` — text quality score (0–10, 5 dimensions).
 
@@ -57,11 +57,11 @@ Full typography reference: `${CLAUDE_PLUGIN_ROOT}/skills/ru-text/references/typo
 | на сегодняшний день | сегодня |
 | в целях | чтобы |
 
-Full stop-word catalog (97 entries): `${CLAUDE_PLUGIN_ROOT}/skills/ru-text/references/info-style.md`
+Full stop-word catalog (97 entries): `${CLAUDE_PLUGIN_ROOT}/references/info-style.md`
 
 ## When to Load Reference Files
 
-Reference files: `${CLAUDE_PLUGIN_ROOT}/skills/ru-text/references/<filename>`
+Reference files: `${CLAUDE_PLUGIN_ROOT}/references/<filename>`
 If the path is not resolved, search: `Glob("**/ru-text/references/scoring.md")` and use the parent directory.
 
 | Task | File |
@@ -92,7 +92,7 @@ Before delivering Russian text:
 
 When writing or editing content (posts, articles, scripts, descriptions), ALSO check against AI-specific patterns.
 
-Full catalog: `${CLAUDE_PLUGIN_ROOT}/skills/ru-text/references/anti-ai-patterns.md`
+Full catalog: `${CLAUDE_PLUGIN_ROOT}/references/anti-ai-patterns.md`
 
 Quick checks before delivery:
 - [ ] No "cinematic" openings (Воскресенье, 10 вечера...)
@@ -113,7 +113,7 @@ This skill separates ENGINE (rules, patterns, checks) from DATA (voice, style, b
 
 When writing or editing **any content** (posts, articles, scripts, descriptions, client materials):
 
-1. **Read config.md** from `${CLAUDE_PLUGIN_ROOT}/skills/ru-text/config.md`
+1. **Read config.md** from `${CLAUDE_PLUGIN_ROOT}/config.md`
 2. **Read ALL voice data files** listed in config.md (ToV Master, Author Profile, Brand Identity)
 3. **Apply voice profile** — every text must sound like the author, not like a generic AI:
    - Match sentence patterns, vocabulary level, and rhythm from ToV
