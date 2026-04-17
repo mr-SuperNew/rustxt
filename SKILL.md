@@ -19,6 +19,10 @@ Credits and recommended reading: `${CLAUDE_PLUGIN_ROOT}/references/sources.md`
 
 **Style priority**: if the user explicitly requests a specific style (casual, academic, SEO, literary, etc.), their prompt overrides these default rules where they conflict. These rules are defaults, not mandates.
 
+**Functional vs. artistic text**: these rules target functional/informational text (business letters, proposals, articles, instructions, product copy, documentation). For artistic, personal-voice, poetic, or humorous content — voice and form override info-style rules, but baseline hygiene (facts, honesty, respect for the reader) remains. See `references/info-style.md` section H «Когда правила гнутся».
+
+**LLM behavior — no blocking questions**: if reader context is unclear (audience, register, tone), do NOT stop to ask. Make reasonable assumptions, write the text, then add a single line at the end stating the assumptions and inviting correction. Example: «Сделал в деловом регистре для холодной аудитории. Если читатель знаком с темой или нужен разговорный тон — скажи, переделаю.» This keeps the flow and gives the user a concrete revision anchor rather than blocking on clarifications.
+
 ## Always-On: Typography
 
 Apply these rules to ALL Russian text output without exception.
