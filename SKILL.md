@@ -4,6 +4,7 @@ description: >
   Use when writing, editing, or reviewing Russian-language text, or when user
   mentions rustxt or ru-text. Covers typography, info-style, editorial, UX writing, business
   correspondence. Auto-activates on Russian text output.
+version: 2.0.0
 metadata:
   openclaw:
     always: true
@@ -91,6 +92,7 @@ Before delivering Russian text:
 - [ ] Ellipsis: … (single char)
 - [ ] Abbreviations: т. д., т. п. (with NBSP)
 - [ ] No double spaces, no space before punctuation
+- [ ] First-paragraph removal test: убери первый абзац — текст работает лучше? Если да, удали.
 
 ## Anti-AI Layer
 
@@ -108,6 +110,9 @@ Quick checks before delivery:
 - [ ] No signposting (Давайте разберёмся...)
 - [ ] Has sensory grounding (1-2 per text)
 - [ ] Has personality and opinion where appropriate
+- [ ] No AI-politeness artifacts (отличный вопрос, конечно!, безусловно, несомненно)
+- [ ] No English syntax calques (это не просто X это Y; когда X, это может привести к Y; это не про X, это про Y)
+- [ ] Не путать: тире/ёлочки/«ё»/отсутствие опечаток — НЕ признаки ИИ, не убирать их ради «человечности»
 
 ## Voice Calibration (Data Layer)
 
