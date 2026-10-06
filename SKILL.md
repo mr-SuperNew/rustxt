@@ -2,8 +2,8 @@
 name: rustxt
 description: >
   Use when writing, editing, or reviewing Russian-language text, or when user
-  mentions rustxt or ru-text. Covers typography, info-style, editorial, UX writing, business
-  correspondence. Auto-activates on Russian text output.
+  mentions rustxt or ru-text. Covers typography, info-style, clarity checks (ASD-STE100-inspired),
+  editorial, UX writing, business correspondence. Auto-activates on Russian text output.
 version: 2.0.0
 metadata:
   openclaw:
@@ -72,6 +72,7 @@ If the path is not resolved, search: `Glob("**/rustxt/references/scoring.md") or
 | Task | File |
 |---|---|
 | Writing/editing articles, blog posts, SEO, content | info-style.md |
+| Instructions, documentation, reports, business letters; any "make it clearer" request | clarity-ste.md |
 | Interface text, buttons, errors, hints, microcopy | ux-writing.md |
 | Emails, messenger, business correspondence | business-writing.md |
 | Punctuation review, comma placement | editorial-punctuation.md |
@@ -93,6 +94,8 @@ Before delivering Russian text:
 - [ ] Abbreviations: т. д., т. п. (with NBSP)
 - [ ] No double spaces, no space before punctuation
 - [ ] First-paragraph removal test: убери первый абзац — текст работает лучше? Если да, удали.
+- [ ] Clarity (only when there is a real comprehension problem): unambiguous pronouns, condition before action, one term — one meaning
+- [ ] Do not chop into short sentences, do not add facts, do not change modality
 
 ## Anti-AI Layer
 
