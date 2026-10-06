@@ -4,7 +4,7 @@ description: >
   Use when writing, editing, or reviewing Russian-language text, or when user
   mentions rustxt or ru-text. Covers typography, info-style, clarity checks (ASD-STE100-inspired),
   editorial, UX writing, business correspondence. Auto-activates on Russian text output.
-version: 2.0.0
+version: 2.1.0
 metadata:
   openclaw:
     always: true
