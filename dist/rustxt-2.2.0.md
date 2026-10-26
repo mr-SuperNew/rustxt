@@ -5,12 +5,12 @@ description: >
   user mentions rustxt or ru-text. Covers typography, info-style, anti-AI
   patterns, punctuation, scoring. Auto-activates on Russian text output.
   Reads voice-profile.md from Project Knowledge if present.
-version: 2.1.0
+version: 2.2.0
 ---
 
 # rustxt — качество русского текста
 
-**Версия 2.1.0.** Список изменений — в CHANGELOG.md репозитория [github.com/mr-SuperNew/rustxt](https://github.com/mr-SuperNew/rustxt).
+**Версия 2.2.0.** Список изменений — в CHANGELOG.md репозитория [github.com/mr-SuperNew/rustxt](https://github.com/mr-SuperNew/rustxt).
 
 Единый скилл для русского текста: типографика, инфостиль, точечные проверки ясности, anti-AI паттерны, пунктуация, скоринг.
 Разделяет **движок** (правила ниже) и **данные** (голос пользователя через `voice-profile.md`).
@@ -35,7 +35,7 @@ version: 2.1.0
 
 Первым сообщением спроси:
 
-> Привет. Это rustxt 2.1.0 — скилл качества русского текста. Скажи сразу: ставишь впервые или у тебя уже стоит прошлая версия?
+> Привет. Это rustxt 2.2.0 — скилл качества русского текста. Скажи сразу: ставишь впервые или у тебя уже стоит прошлая версия?
 
 Если **впервые** — переходи к Шагу 1.
 

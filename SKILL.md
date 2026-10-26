@@ -4,7 +4,7 @@ description: >
   Use when writing, editing, or reviewing Russian-language text, or when user
   mentions rustxt or ru-text. Covers typography, info-style, clarity checks (ASD-STE100-inspired),
   editorial, UX writing, business correspondence. Auto-activates on Russian text output.
-version: 2.1.0
+version: 2.2.0
 metadata:
   openclaw:
     always: true
@@ -83,6 +83,16 @@ If the path is not resolved, search: `Glob("**/rustxt/references/scoring.md") or
 | Experience-based rules (dash overuse, etc.) | addenda.md |
 | AI pattern detection, content humanization | anti-ai-patterns.md |
 
+## Common Mistakes and Pitfalls
+
+- **The user's explicit style wins.** If the user asks for a style (conversational, academic, SEO, literary), the request overrides these rules where they conflict. The rules are defaults, not a mandate.
+- **Functional and literary text are different modes.** The rules are written for functional and informational text (business letters, proposals, articles, instructions, product copy, documentation). In fiction, personal-voice, poetic or humorous text, voice and form come before info-style rules, but basic hygiene stays: facts, honesty, respect for the reader.
+- **Do not ask blocking questions.** If the reader's context is unclear (audience, register, tone), do not stop to ask. Make a reasonable assumption, write the text, and name the assumptions in one line at the end with an offer to adjust.
+- **Dashes, guillemets, "ё" and the absence of typos are not signs of AI.** Do not remove them for the sake of "human-sounding" text.
+- **Clarity only when there is a real comprehension problem.** Do not chop text into short sentences, do not add facts, do not change modality.
+- **Client text goes in the client's voice, not the author's.** The author's voice applies only to the author's own content.
+- **No `config.md` — do not block.** Work by the universal rules and mention `/rustxt:setup` once per session.
+
 ## Quality Checklist
 
 Before delivering Russian text:
@@ -91,6 +101,7 @@ Before delivering Russian text:
 - [ ] Dashes: — in text, – in ranges, - only in compounds; max 1–2 per paragraph
 - [ ] NBSP after в, к, с, о, у, и, а
 - [ ] Ellipsis: … (single char)
+- [ ] Numbers: 1 000 000 (thin or non-breaking space), decimal comma 3,14, ordinals 1-й, № 5, 1 500 ₽ (number and sign joined by NBSP)
 - [ ] Abbreviations: т. д., т. п. (with NBSP)
 - [ ] No double spaces, no space before punctuation
 - [ ] First-paragraph removal test: убери первый абзац — текст работает лучше? Если да, удали.
